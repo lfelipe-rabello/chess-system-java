@@ -28,4 +28,16 @@ public class Board {
 	public Peace piece(Position position) {
 		return pieces[position.getRow()][position.getColumn()];
 	}
+	public void placePiece(Peace piece, Position position) {
+		pieces[position.getRow()][position.getColumn()] = piece;
+		piece.position = position;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 }
